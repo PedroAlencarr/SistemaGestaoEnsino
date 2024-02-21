@@ -1,14 +1,14 @@
 import React from 'react';
 
-import {Label, SafeAreaView} from './src/components/Home/styled';
-import { Login, Validations } from './src/components/Home/Home';
+import { SafeAreaView, Text} from './src/components/Home/styled';
+import { HomeCard } from './src/components/Home/Home';
+import { Copyright } from '@/components/Home/Home.util';
 
 export default function App() {
   return (
     <SafeAreaView>
-      <Label>Sistema de Gestão de Ensino</Label>
-      <Login name='user@email.com' password='********' />
-      <Validations />
+      <HomeCard />
+      <Copyright />
     </SafeAreaView>
   );
 }
